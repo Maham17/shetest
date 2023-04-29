@@ -1,0 +1,1247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>She Leaders Hub</title>
+</head>
+<style>
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-family: sans-serif;
+  }
+
+  header {
+    height: 20vh;
+
+  }
+
+  #logo {
+    height: 60%;
+    background-color: white;
+    text-align: center;
+
+
+  }
+
+  #logo img {
+    height: 85%;
+    margin-top: 10px;
+
+  }
+
+  .navbar {
+    height: 40%;
+    background-color: #D25469;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+
+  }
+
+  nav ul {
+    list-style: none;
+
+  }
+
+  nav li {
+    display: inline-block;
+    margin-right: 20px;
+    padding: 15px;
+  }
+
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+  }
+
+  nav a:hover {
+    background-color: white;
+    color: #D25469;
+  }
+
+  .box1 {
+    width: 5%;
+    height: 100%;
+  }
+
+  .box2 {
+    width: 70%;
+    height: 100%;
+  }
+
+  .box3 {
+    width: 5%;
+    height: 100%;
+  }
+
+  .box1 img,
+  .box3 img {
+    color: white;
+    width: 70%;
+    margin-top: 5px;
+  }
+
+  #banner {
+    width: 100%;
+    background-image: linear-gradient(#cf5a6e85, #cf5a6e85), url(./images/Banner.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    padding: 19% 0;
+
+  }
+
+  .layer {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+  }
+
+  #banner h1 {
+    text-align: center;
+    color: white;
+    letter-spacing: 2px;
+    line-height: 50px;
+    font-size: 40px;
+    font-family: sans-serif;
+
+  }
+
+  .explore {
+    width: 200px;
+    height: 40px;
+    color: white;
+    background-color: #d63954;
+    text-align: center;
+    padding: 10px;
+    margin-left: calc(50% - 100px);
+    margin-top: 50px;
+  }
+
+  .explore:hover {
+    color: white;
+    background-color: #D25469;
+  }
+
+  .tagline {
+    width: 100%;
+    height: 40px;
+    background-color: #FFDFDD;
+    overflow: hidden;
+  }
+
+  .main_parent {
+    width: 230%;
+    height: 100%;
+    display: flex;
+    animation: move 7s linear infinite;
+  }
+
+  .sub_parent {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .tagline p {
+    letter-spacing: 2px;
+  }
+
+  .tg {
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+
+  }
+
+  @keyframes move {
+    0% {
+      margin-left: 0;
+    }
+
+    100% {
+      margin-left: -50%;
+    }
+
+  }
+
+  #mission {
+    padding: 2% 0;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+
+  }
+
+  .m1 {
+    width: 45%;
+    height: 100%;
+    margin-left: 20px;
+  }
+
+  .m2 {
+    width: 40%;
+    height: auto;
+  }
+
+  .m1 h4 {
+    margin-top: 30px;
+  }
+
+  .m1 h2 {
+    margin-top: 15px;
+    color: #D25469;
+    letter-spacing: 1px;
+  }
+
+  .m1 p {
+    margin-top: 20px;
+    line-height: 26px;
+
+  }
+
+  .m2 img {
+    width: 100%;
+  }
+
+  button {
+    width: 220px;
+    height: 35px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    background-color: #D25469;
+    color: white;
+    border: none;
+
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  #services {
+    width: 100%;
+    height: max-content;
+    padding: 1px;
+  }
+
+  .text {
+    margin-left: 71px;
+    font-size: 24px;
+    margin-top: 20px;
+    letter-spacing: 1px;
+    color: #D25469;
+
+  }
+
+  .container {
+    width: 100%;
+    height: max-content;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 5%;
+
+  }
+
+  .ss {
+    width: 22%;
+    height: 300;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+  }
+
+  .s1,
+  .s3,
+  .s6,
+  .s8 {
+    background-color: antiquewhite;
+    padding-bottom: 25px;
+  }
+
+  .s2 {
+    background-image: url(./images/1.png);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .s4 {
+    background-image: url(./images/2.png);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .s5 {
+    background-image: url(./images/3.png);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .s7 {
+    background-image: url(./images/4.png);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .ss h3 {
+    text-align: center;
+    font-size: 22px;
+    margin-top: 20px;
+    transition: all .3s;
+  }
+
+  .ss h3:hover {
+    color: white;
+    background-color: #D25469;
+  }
+
+  .line {
+    width: 60px;
+    height: 1px;
+    background-color: #D25469;
+    margin-top: 10px;
+  }
+
+  .ss p {
+    line-height: 26px;
+    margin-top: 20px;
+  }
+
+  .gallery {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .gg {
+    width: 25%;
+    height: 40vh;
+
+  }
+
+  .gg img {
+    width: 100%;
+    height: 100%;
+
+  }
+
+  #testimonial {
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    background-image: url(./images/bg.png);
+    background-size: cover;
+    margin-top: 30px;
+    padding: 1px;
+
+  }
+
+  #testimonial h2 {
+    color: #D25469;
+    margin-left: 71px;
+    margin-top: 30px;
+    letter-spacing: 1px;
+  }
+
+  #testimonial h3 {
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 28px;
+    margin-top: 30px;
+  }
+
+  .pic {
+    width: 30%;
+    height: 80px;
+    margin-left: calc(50% - 15%);
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .pic img {
+    width: 80px;
+    border-radius: 50%;
+  }
+
+  .cont22 {
+    display: flex;
+  }
+
+  .reviews {
+    width: 50%;
+    height: max-content;
+    margin-top: 30px;
+    margin-left: calc(50% - 25%);
+    position: absolute;
+
+  }
+
+  .reviews p {
+    line-height: 29px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-align: justify;
+
+  }
+
+  .reviews h4 {
+    margin-top: 20px;
+    text-align: center;
+    color: #d33650;
+  }
+
+  #r2,
+  #r3 {
+    display: none;
+  }
+
+  .active {
+    opacity: 0.8;
+  }
+
+  form {
+    width: 100%;
+    height: max-content;
+    background-color: #FFDFDD;
+    padding: 1px;
+    padding-bottom: 20px;
+
+  }
+
+  .form h2 {
+    text-align: center;
+    margin-top: 50px;
+    letter-spacing: 1px;
+  }
+
+  .form p {
+    text-align: center;
+    margin-top: 20px;
+    color: #d63954;
+    padding: 0 3%;
+
+  }
+
+  .for {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .form input {
+    width: 280px;
+    height: 40px;
+    border: none;
+    padding: 5px;
+
+  }
+
+  .form button {
+    width: 90px;
+    height: 40px;
+    margin-left: 10px;
+    margin-top: 0;
+  }
+
+  .story {
+    width: 100%;
+    height: 70vh;
+    background-image: url(./images/blossom\ jewels.webp);
+    background-position: center;
+    background-attachment: fixed;
+    padding: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1px;
+  }
+
+  .storycontainer {
+    width: 60%;
+    height: max-content;
+    background-color: #d3365081;
+    margin: auto;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+
+  .story h2 {
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+  }
+
+  .story h1 {
+    text-align: center;
+    letter-spacing: 2px;
+    margin-top: 20px;
+  }
+
+  .story p {
+    margin-top: 20px;
+    text-align: center;
+    line-height: 29px;
+    color: white;
+    font-style: bold;
+    letter-spacing: 1px;
+  }
+
+  .story button {
+    color: white;
+    background-color: #d33650;
+  }
+
+  .self {
+    width: 100%;
+    background-color: white;
+    padding: 22% 0;
+    background-image: url(./images/self\ care.png);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .footer {
+    width: 100%;
+    height: max-content;
+    padding-bottom: 20px;
+    background-color: #D25469;
+    display: flex;
+    justify-content: center;
+  }
+
+  .ff {
+    width: 22%;
+    height: 100%;
+    margin-left: 90px;
+  }
+
+  .f1 img {
+    width: 100%;
+    margin-top: 60px;
+  }
+
+  .ff h3 {
+    color: white;
+    margin-top: 30px;
+  }
+
+  .ff p {
+    color: white;
+    margin-top: 10px;
+  }
+
+  .end {
+    width: 100%;
+    height: 6vh;
+    background-color: #FEDEDC;
+  }
+
+  .end p {
+    text-align: center;
+    padding: 5px;
+  }
+
+  @media screen and (max-width:1080px) {
+    nav li {
+      margin: 10px 0;
+      padding: 0;
+      margin-left: 10px;
+    }
+
+    .m2 {
+      margin-top: 9%;
+    }
+
+    .head {
+      font-size: 18px !important;
+    }
+
+    .ss p {
+      font-size: 15px;
+      line-height: 20px;
+      margin-top: 5px;
+    }
+
+    .pic {
+      width: 40%;
+      margin-left: calc(50% - 20%);
+    }
+
+    #testimonial {
+      height: 120vh;
+    }
+
+    .ff {
+      width: 50%;
+      margin: 0;
+    }
+
+    .ff h3 {
+      font-size: 18px;
+    }
+
+    .ff p {
+      font-size: 15px;
+    }
+    .main_parent {
+      width: 250%;
+    }
+    .tg{
+      font-size: 12px;
+    }
+  }
+
+  @media screen and (max-width:1000px) {
+    nav li {
+      margin: 10px 0;
+      margin-left: 10px;
+    }
+
+    nav a {
+      padding: 0;
+      font-size: 16px;
+    }
+
+    .ss {
+      width: 33%;
+      height: 170px;
+      margin-top: 2%;
+    }
+
+    .container {
+      padding: 0 3%;
+    }
+
+    .pic {
+      width: 56%;
+      margin-left: calc(50% - 28%);
+    }
+
+    .reviews {
+      width: 66%;
+      margin-left: calc(50% - 33%);
+    }
+
+    .ff img {
+      margin-top: 20px;
+    }
+
+    .ff p {
+      font-size: 13px;
+    }
+
+    .main_parent {
+      width: 250%;
+    }
+
+    .tg {
+      font-size: 12px;
+    }
+  }
+  @media screen and (max-width:980px) {
+    .main_parent{
+  width: 300%;
+}
+  }
+  @media screen and (max-width:900px) {
+    .box2 {
+      position: absolute;
+      left: 0;
+      top: 108px;
+      height: max-content;
+      width: 100%;
+    }
+
+    .navbar {
+      justify-content: space-between;
+      text-align: left;
+    }
+
+    .box2 ul {
+      background-color: #D25469;
+      padding: 10px;
+      width: 100%;
+    }
+
+    .box2 li {
+      display: block;
+    }
+
+    #mission {
+      flex-wrap: wrap;
+    }
+
+    .m1 {
+      width: 100%;
+    }
+
+    .m1 p {
+      padding-right: 3%;
+    }
+
+    .m2 {
+      width: 100%;
+    }
+
+    .active2 {
+      display: none;
+    }
+
+    #testimonial {
+      background-image: none;
+    }
+
+    .footer {
+      flex-wrap: wrap;
+    }
+
+    .ff {
+      width: 50%;
+
+    }
+
+    .f3 {
+      padding-left: 50px;
+    }
+.main_parent{
+  width: 300%;
+}
+
+  }
+
+  @media screen and (max-width:880px) {
+    #banner h1 {
+      font-size: 37px;
+      line-height: 42px;
+      padding: 0 8%;
+    }
+
+    .ss {
+      width: 50%;
+      height: 250px;
+
+    }
+
+    .gallery {
+      flex-wrap: wrap;
+    }
+
+    .gg {
+      width: 33%;
+    }
+
+    .storycontainer {
+      width: 80%;
+
+    }
+
+    .ff img {
+      width: 100%;
+    }
+
+    .box1,
+    .box3 {
+      width: 6%;
+    }
+
+    .box1 img,
+    .box3 img {
+      width: 70%;
+    }
+    .main_parent{
+      width: 330%;
+    }
+  }
+
+  @media screen and (max-width:750px) {
+.main_parent{
+  width: 360%;
+}
+  }
+  @media screen and (max-width:690px) {
+.main_parent{
+  width: 390%;
+}
+  }
+
+  @media screen and (max-width:650px) {
+
+    .box1 img,
+    .box3 img {
+      width: 80%;
+      margin-top: 10px;
+    }
+
+    #banner h1 {
+      font-size: 28px;
+      padding: 0 4%;
+    }
+
+    .storycontainer {
+      width: 90%;
+    }
+    .main_parent{
+      width: 450%;
+    }
+  }
+
+  @media screen and (max-width:560px) {
+
+    .pic {
+      width: 66%;
+      margin-left: calc(50% - 33%);
+    }
+
+    .reviews {
+      width: 90%;
+      margin-left: calc(50% - 45%);
+    }
+
+    .gg {
+      width: 50%;
+    }
+
+    .story {
+      height: 93vh !important;
+    }
+
+    .box1,
+    .box3 {
+      width: 7%;
+    }
+    .main_parent{
+      width: 480%;
+    }
+  }
+
+  @media screen and (max-width:500px) {
+    .ss {
+      width: 100%;
+      height: 290px;
+    }
+
+    #banner h1 {
+      font-size: 20px;
+      line-height: 30px;
+    }
+.main_parent{
+  width: 500%;
+}
+  }
+  @media screen and (max-width:500px) {
+    .main_parent{
+      width: 560%;
+    }
+  }
+  @media screen and (max-width:450px) {
+    .m1 p {
+      font-size: 15px;
+    }
+
+    #btn2 {
+      width: 200px;
+      font-size: 12px;
+    }
+
+    .pic {
+      height: 60px;
+      width: 80%;
+      margin-left: calc(50% - 40%);
+    }
+
+    .pic img {
+      height: 59px;
+    }
+
+    #testimonial {
+      height: 128vh;
+    }
+
+    .for {
+      flex-wrap: wrap;
+    }
+
+    .form input {
+      width: 220px;
+    }
+
+    .form {
+      height: 50vh;
+    }
+
+    .form button {
+      width: 100px;
+    }
+
+    .story {
+      height: 80vh;
+    }
+
+    .ff {
+      padding-left: 10px;
+      width: 100%;
+    }
+
+    .footer {
+      display: flex;
+      justify-content: center;
+    }
+
+    #logo img {
+      width: 100%;
+    }
+
+    #r1 {
+      margin-top: 0;
+    }
+    .main_parent{
+      width: 700%;
+    }
+  }
+
+  @media screen and (max-width:358px) {
+    #banner h1 {
+      font-size: 25px;
+      padding: 0 4%;
+    }
+
+    #testimonial {
+      height: 138vh;
+    }
+.main_parent{
+  width: 750%;
+}
+  }
+
+  @media screen and (max-width:330px) {
+    .gg {
+      width: 100%;
+    }
+
+    .ff {
+      padding-left: 10px;
+      width: 100%;
+    }
+
+    .footer {
+      display: flex;
+      justify-content: center;
+    }
+
+    #logo img {
+      width: 100%;
+    }
+
+    .box1,
+    .box3 {
+      width: 10%;
+
+    }
+
+    .box1 img,
+    .box3 img {
+      width: 80%;
+
+    }
+    .main_parent{
+      width: 790%;
+    }
+  }
+</style>
+
+<body>
+  <header>
+    <div id="logo"><a href="./index.html"><img src="./images/SHE LEADERS HUB LOGO.png" alt=""></a>
+    </div>
+    <div class="navbar">
+      <div class="box1">
+        <img src="./images/bars.PNG" alt="" onclick="menuclick()">
+      </div>
+      <div class="box2 active2">
+        <nav>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About Us</a></li>
+            <li><a href="./services.html">Services</a></li>
+            <li><a href="./success.html">Success Stories</a></li>
+            <li><a href="./selfcare.html">Self-Care</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="box3">
+        <img src="./images/search.PNG" alt="">
+      </div>
+    </div>
+  </header>
+  <div id="banner">
+
+    <div class="layer">
+      <h1>UNLEASHING THE POWER <br> OF FEMALE ENTREPRENEURSHIP</h1>
+      <button class="explore"><a href="./about.html">EXPLORE MORE</a></button>
+    </div>
+
+  </div>
+  <div class="tagline">
+    <div class="main_parent">
+      <div class="sub_parent tg1">
+        <div class="tg">
+          <img src="./images/heart.PNG" alt="">
+          <p>Empowering your vision, securing your future.</p>
+
+        </div>
+        <div class="tg">
+          <img src="./images/heart.PNG" alt="">
+          <p>Your success is our mission.</p>
+
+        </div>
+        <div class="tg">
+          <img src="./images/heart.PNG" alt="">
+          <p>Launch your business with confidence.</p>
+
+        </div>
+        <div class="tg">
+          <img src="./images/heart.PNG" alt="">
+          <p>Achieve your goals with us.</p>
+
+        </div>
+      </div>
+      <div class="sub_parent">
+        <div class="tg">
+          <img src="./images/heart.PNG" alt="">
+          <p>Empowering your vision, securing your future.</p>
+          <i id="i2" class="fa-solid fa-heart"></i>
+        </div>
+        <div class="tg2 tg">
+          <img src="./images/heart.PNG" alt="">
+          <p>Your success is our mission.</p>
+
+        </div>
+        <div class="tg3 tg">
+          <img src="./images/heart.PNG" alt="">
+          <p>Launch your business with confidence.</p>
+        </div>
+        <div class="tg4 tg">
+          <img src="./images/heart.PNG" alt="">
+          <p>Achieve your goals with us.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="mission">
+    <div class="m1">
+      <h4>Welcome!!</h4>
+      <h2>Our Mission</h2>
+      <p> Our mission is to empower and inspire women to pursue their entrepreneurial dreams while prioritizing
+        their well-being.
+        We believe that to be successful in business, self-care is essential.
+        We provide a supportive platform for women to connect, learn, and grow together.
+        Through our resources, mentorship, and community, we aim to break down barriers and create a more
+        equitable world for women in business.
+        Our resources include expert advice, business tools, and networking opportunities to help women overcome
+        obstacles and thrive in their ventures.
+        We strive to promote diversity and inclusion in entrepreneurship and aim to be a catalyst for positive
+        change in the industry. Join us and be a part of the movement to create a more inclusive and supportive
+        entrepreneurial ecosystem for women.</p>
+      <button><a href="./about.html">LEARN MORE ABOUT US</a></button>
+    </div>
+    <div class="m2">
+      <img src="./images/about.png" alt="">
+    </div>
+  </div>
+  <div id="services">
+    <h2 class="text">Our Services</h2>
+    <div class="container">
+      <div class="s1 ss">
+        <h3>Mentorship</h3>
+        <div class="line"></div>
+        <p>To help women entrepreneurs build <br> and grow their business.</p>
+      </div>
+      <div class="s2 ss">
+      </div>
+      <div class="s3 ss">
+        <h3> Skill Building <br> Workshops</h3>
+        <div class="line"></div>
+        <p>To help women entrepreneurs <br> develop new skills and knowledge <br> to grow their businesses.</p>
+      </div>
+      <div class="s4 ss">
+      </div>
+      <div class="s5 ss">
+      </div>
+      <div class="s6 ss">
+        <h3>Networking Events</h3>
+        <div class="line"></div>
+        <p>To provide a supportive platform <br> for women to connect and learn <br> from each other.</p>
+      </div>
+      <div class="s7 ss">
+      </div>
+      <div class="s8 ss">
+        <h3>Technology Support</h3>
+        <div class="line"></div>
+        <p>Help entrepreneurs optimize their <br> use of technology, including <br> website design, e-commerce
+          solutions, and automation tools.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="testimonial">
+    <h2>Testimonials</h2>
+    <h3>OUR CLIENTS</h3>
+    <div class="cont22">
+      <div class="pic">
+        <img class="clnt" src="./images/t1.jpg" alt="" data-key="r1">
+        <img class="clnt" src="./images/t2.jpg" alt="" data-key="r2">
+        <img class="clnt" src="./images/t3.jpg" alt="" data-key="r3">
+      </div>
+    </div>
+
+    <div class="reviews" id="r1">
+      <p>"I had the pleasure of working with this team to bring my
+        business idea to life, and I couldn't be happier with the
+        results. Their mentorship and skill-building workshops helped
+        me develop my skills and confidence, and their technology
+        support made the process smooth and stress-free. Thanks to
+        their networking events, I also met some great contacts in
+        my industry. Overall, I highly recommend their services to
+        anyone looking to start or grow their business."</p>
+      <h4>Maheen Ali</h4>
+    </div>
+    <div class="reviews" id="r2">
+      <p>"I'm so glad I found this service! They provided me with the tools
+        and guidance I needed to take my business to the next level. Their
+        team is professional, knowledgeable, and always willing to help. Highly recommend!"</p>
+      <h4>Sierra Hashmi</h4>
+    </div>
+    <div class="reviews" id="r3">
+      <p>"Starting my business was overwhelming, but this platform made it easy. Their workshops and mentorship
+        helped me develop
+        the skills and confidence to succeed. Thank you for your support!"</p>
+      <h4>Laiba Querishi</h4>
+    </div>
+  </div>
+  <div class="gallery">
+    <div class="g1 gg">
+      <img src="./images/s1.jpg" alt="">
+    </div>
+    <div class="g2 gg">
+      <img src="./images/s2.jpg" alt="">
+    </div>
+    <div class="g3 gg">
+      <img src="./images/s3.jpg" alt="">
+    </div>
+    <div class="g4 gg">
+      <img src="./images/s7.jpeg" alt="">
+    </div>
+    <div class="g5 gg">
+      <img src="./images/s5.jpg" alt="">
+    </div>
+    <div class="g6 gg">
+      <img src="./images/s6.jpg" alt="">
+    </div>
+  </div>
+  <form action="" class="form">
+    <h2>Subscribe to our Emails</h2>
+    <p>Stay up-to-date with the latest news, tips, and offers from us by subscribing to our emails.</p>
+    <div class="for">
+      <input type="email" name="" id="" placeholder="Email">
+      <button>Subscribe</button>
+    </div>
+  </form>
+  <div class="story">
+    <div class="storycontainer">
+      <h2>SUCCESS STORY</h2>
+      <h1>BLOSSOM JEWELS </h1>
+      <p>Blossom Jewels by MK is a jewelry brand that was started by a
+        17-year-old girl with a passion for creating trendy and
+        minimalist jewelry for girls. With her creativity and dedication,
+        she came up with the idea of starting an online store to showcase
+        her work and reach a wider audience.</p>
+      <button><a href="./success.html">READ MORE</a></button>
+    </div>
+
+  </div>
+  <div class="self">
+  </div>
+  <div class="footer">
+    <div class="f1 ff"><a href="./index.html">
+        <img src="./images/SHE LEADERS HUB LOGO.png" alt=""></a>
+    </div>
+    <div class="f2 ff">
+      <h3>Company</h3>
+      <p>Address: Pakistan</p>
+      <p>Contact number: +9230764502</p>
+      <p>Email: Sheleadershub@outlook.com</p>
+    </div>
+    <div class="f3 ff">
+      <h3>Information</h3>
+      <p><a href="./success.html"> Success stories</a></p>
+      <p><a href="./services.html">Services</a></p>
+      <p><a href="./selfcare.html">Self-care</a></p>
+    </div>
+    <div class="f4 ff">
+      <h3>Discover</h3>
+      <p><a href="./about.html"> About us</a></p>
+      <p><a href="./contact.html">Contact us</a></p>
+    </div>
+  </div>
+  <div class="end">
+    <p>© 2023, She Leaders Hub </p>
+  </div>
+</body>
+
+<script>
+  var pix = document.getElementsByClassName("clnt");
+  console.log(pix);
+  for (let index = 0; index < pix.length; index++) {
+    const element2 = pix[index];
+    element2.addEventListener("mouseover", function () {
+
+      for (let index2 = 0; index2 < pix.length; index2++) {
+        pix[index2].classList.remove("active")
+      }
+      element2.classList.add("active");
+
+      var keydata = element2.getAttribute("data-key");
+      var tb = document.getElementsByClassName("reviews");
+      for (let ind = 0; ind < tb.length; ind++) {
+        tb[ind].style.display = "none"
+
+      }
+      document.getElementById(keydata).style.display = "block";
+    })
+
+
+  }
+  var menu = document.getElementsByClassName("box2")[0];
+  function menuclick() {
+    menu.classList.toggle("active2");
+
+  }
+</script>
+
+</html>

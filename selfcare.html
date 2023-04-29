@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self Care</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        cursor: pointer;
+        font-family: sans-serif;
+        
+    }
+
+    header {
+        height: 20vh;
+
+    }
+
+    #logo {
+        height: 60%;
+        background-color: white;
+        text-align: center;
+    }
+
+    #logo img {
+        height: 85%;
+        margin-top: 10px;
+    }
+
+    .navbar {
+        height: 40%;
+        background-color: #D25469;
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+    nav ul {
+        list-style: none;
+
+    }
+
+    nav li {
+        display: inline-block;
+        margin-right: 20px;
+        padding: 15px;
+    }
+
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 10px;
+    }
+
+    nav a:hover {
+        background-color: white;
+        color: #D25469;
+    }
+
+    .box1 {
+        width: 5%;
+        height: 100%;
+    }
+
+    .box2 {
+        width: 70%;
+        height: 100%;
+    }
+
+    .box3 {
+        width: 5%;
+        height: 100%;
+    }
+
+    .box1 img,
+    .box3 img {
+        color: white;
+        width: 70%;
+        margin-top: 5px;
+    }
+
+    .banner {
+        width: 100%;
+        background-image: linear-gradient(#ffc2e191, #ffc2e191), url(./images/self\ care\ bg.png);
+        background-size: cover;
+        padding: 1px;
+        padding: 14% 0;
+    }
+
+    .banner h1 {
+        text-align: center;
+        color: #D25469;
+    }
+
+    .banner h2 {
+        text-align: center;
+        font-size: 18px;
+        margin-top: 5px;
+        padding: 0 2%;
+    }
+
+    .self {
+        width: 100%;
+        height: max-content;
+        padding-bottom: 3%;
+    }
+
+    .self h2 {
+        text-align: center;
+        margin-top: 30px;
+
+    }
+
+    .slef_cont {
+        width: 100%;
+        height: 33vh;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .ss {
+        width: 20%;
+        height: 100%;
+    }
+
+    .ss img {
+        width: 100%;
+    }
+
+    .s1,
+    .s3 {
+        background-color: #D25469;
+    }
+
+    .s1 h2,
+    .s3 h2 {
+        color: white;
+        padding: 0 2%;
+    }
+
+    .s2 h2,
+    .s4 h2 {
+        color: #D25469;
+        padding: 0 2%;
+    }
+
+    .s2,
+    .s4 {
+        background-color: #f7d9de;
+
+    }
+
+    .workshop {
+        width: 100%;
+        height: max-content;
+        padding-bottom: 2%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .ww {
+        width: 45%;
+        height: max-content;
+    }
+
+    .w1 {
+        height: max-content;
+    }
+
+    .ww h2 {
+        color: #D25469;
+        margin-top: 10px;
+    }
+
+    .ww h3 {
+        font-size: 15px;
+        margin-top: 5px;
+        color: #da2241;
+    }
+
+    .ww p {
+        line-height: 25px;
+        margin-top: 10px;
+    }
+
+    .ww img {
+        width: 100%;
+    }
+
+    .footer {
+        width: 100%;
+        height: max-content;
+        padding-bottom: 20px;
+        background-color: #D25469;
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    .ff {
+        width: 22%;
+        height: 100%;
+        margin-left: 90px;
+    }
+
+    .f1 img {
+        width: 100%;
+        margin-top: 60px;
+    }
+
+    .ff h3 {
+        color: white;
+        margin-top: 30px;
+    }
+
+    .ff p {
+        color: white;
+        margin-top: 10px;
+    }
+
+    .end {
+        width: 100%;
+        height: 6vh;
+        background-color: #FEDEDC;
+    }
+
+    .end p {
+        text-align: center;
+        padding: 5px;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    @media screen and (max-width: 1075px) {
+        nav li {
+            margin: 10px 0;
+            padding: 0;
+            margin-left: 10px;
+        }
+
+        .ff {
+            width: 50%;
+            margin: 0;
+        }
+
+        .ff h3 {
+            font-size: 18px;
+        }
+
+        .ff p {
+            font-size: 15px;
+        }
+    }
+
+    @media screen and (max-width:1000px) {
+        nav li {
+            margin: 10px 0;
+            margin-left: 10px;
+        }
+
+        nav a {
+            padding: 0;
+            font-size: 16px;
+        }
+
+        .ff img {
+            margin-top: 20px;
+        }
+
+        .ff p {
+            font-size: 13px;
+        }
+
+        .ww {
+            width: 90%;
+        }
+
+        .workshop {
+            flex-wrap: wrap;
+        }
+    }
+
+    @media screen and (max-width:900px) {
+        .box2 {
+            position: absolute;
+            left: 0;
+            top: 108px;
+            height: max-content;
+            width: 100%;
+        }
+
+        .navbar {
+            justify-content: space-between;
+            text-align: left;
+        }
+
+        .box2 ul {
+            background-color: #D25469;
+            padding: 10px;
+            width: 100%;
+        }
+
+        .box2 li {
+            display: block;
+        }
+
+        .active2 {
+            display: none;
+        }
+
+        .footer {
+            flex-wrap: wrap;
+        }
+
+        .ff {
+            width: 50%;
+
+        }
+
+        .f3 {
+            padding-left: 80px;
+        }
+    }
+
+    @media screen and (max-width:850px) {
+        .ss h2 {
+            font-size: 17px;
+        }
+        .ff img{
+            width: 100%;
+        }
+        .banner h1{
+            font-size: 25px;
+        }
+        .banner h2{
+            font-size: 15px;
+        }
+    }
+
+    @media screen and (max-width:750px) {
+        .ss {
+            width: 45%;
+            margin-top: 2%;
+        }
+
+        .slef_cont {
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            height: max-content;
+        }
+
+        .box1 img,
+        .box3 img {
+            width: 80%;
+            margin-top: 10px;
+        }
+        .ff{
+            margin: 0;
+        }
+    }
+
+    @media screen and (max-width:550px) {
+
+        .box1,
+        .box3 {
+            width: 10%;
+
+        }
+
+        .box1 img,
+        .box3 img {
+            width: 70%;
+            margin-top: 10px;
+        }
+
+        #logo {
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width:400px) {
+        .banner h2 {
+            font-size: 17px;
+        }
+
+        #logo img {
+            width:100%;
+        }
+.banner h2{
+    font-size: 12px;
+}
+    }
+    @media screen and (max-width: 374px) {
+        .ff {
+            padding-left: 10px;
+            width: 100%;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: center;
+        }
+    }
+</style>
+
+<body>
+    <header>
+        <div id="logo"><a href="./index.html">
+                <img src="./images/SHE LEADERS HUB LOGO.png" alt=""></a>
+        </div>
+        <div class="navbar">
+            <div class="box1">
+                <img src="./images/bars.PNG" alt="" onclick="menuclick()">
+            </div>
+            <div class="box2 active2">
+                <nav>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./about.html">About Us</a></li>
+                        <li><a href="./services.html">Services</a></li>
+                        <li><a href="./success.html">Success Stories</a></li>
+                        <li><a href="./selfcare.html">Self-Care</a></li>
+                        <li><a href="./contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="box3">
+                <img src="./images/search.PNG" alt="">
+            </div>
+        </div>
+    </header>
+    <div class="banner">
+        <h1>Self-Care</h1>
+        <h2>Prioritize your well-being with self-care</h2>
+    </div>
+    <div class="self">
+        <h2>Self care tips</h2>
+        <div class="slef_cont">
+            <div class="s1 ss">
+                <h2>Prioritize your sleep</h2>
+                <img src="./images/sleep.png" alt="">
+            </div>
+            <div class="s2 ss">
+                <h2>Practice Mindfulness</h2>
+                <img src="./images/mind.png" alt="">
+            </div>
+            <div class="s3 ss">
+                <h2>Take Breaks</h2>
+                <img src="./images/break.png" alt="">
+            </div>
+            <div class="s4 ss">
+                <h2>Do exercise</h2>
+                <img src="./images/exercise.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="workshop">
+        <div class="w1 ww">
+            <h2>Self-Care Workshop</h2>
+            <h3>Self-Care Essentials: A Workshop for Busy Entrepreneurs</h3>
+            <p>As a busy entrepreneur, it can be easy to neglect self-care in favor of work demands. However, taking
+                care of yourself is essential for maintaining a healthy mind and body, and ultimately, for improving
+                your productivity and success in your business. This workshop is designed to provide you with practical
+                strategies and tools for incorporating self-care into your daily routine. You'll learn about the
+                different dimensions of self-care, including physical, emotional, and spiritual, and discover how to
+                create a personalized self-care plan that works for you. Through interactive activities and group
+                discussions, you'll gain insight into your own self-care needs and leave with a renewed sense of focus
+                and energy. Join us and take the first step towards prioritizing your well-being and success.</p>
+        </div>
+        <div class="w2 ww">
+            <img src="./images/workshop.png" alt="">
+        </div>
+    </div>
+    <div class="footer">
+        <div class="f1 ff"><a href="./index.html">
+                <img src="./images/SHE LEADERS HUB LOGO.png" alt=""></a>
+        </div>
+        <div class="f2 ff">
+            <h3>Company</h3>
+            <p>Address: Pakistan</p>
+            <p>Contact number: +9230764502</p>
+            <p>Email: Sheleadershub@outlook.com</p>
+        </div>
+        <div class="f3 ff">
+            <h3>Information</h3>
+            <p><a href="./success.html"> Success stories</a></p>
+            <p><a href="./services.html">Services</a></p>
+            <p><a href="./selfcare.html">Self-care</a></p>
+        </div>
+        <div class="f4 ff">
+            <h3>Discover</h3>
+            <p><a href="./about.html"> About us</a></p>
+            <p><a href="./contact.html">Contact us</a></p>
+        </div>
+    </div>
+    <div class="end">
+        <p>© 2023, She Leaders Hub </p>
+    </div>
+</body>
+<script>
+    var menu = document.getElementsByClassName("box2")[0];
+    function menuclick() {
+        menu.classList.toggle("active2");
+
+    }
+
+</script>
+
+</html>

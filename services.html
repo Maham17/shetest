@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        cursor: pointer;
+        font-family: sans-serif;
+    }
+
+    header {
+        height: 20vh;
+
+    }
+
+    #logo {
+        height: 60%;
+        background-color: white;
+        text-align: center;
+
+
+    }
+
+    #logo img {
+        height: 85%;
+        margin-top: 10px;
+
+    }
+
+    .navbar {
+        height: 40%;
+        background-color: #D25469;
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+    nav ul {
+        list-style: none;
+
+    }
+
+    nav li {
+        display: inline-block;
+        margin-right: 20px;
+        padding: 15px;
+    }
+
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 10px;
+    }
+
+    nav a:hover {
+        background-color: white;
+        color: #D25469;
+    }
+
+    .box1 {
+        width: 5%;
+        height: 100%;
+    }
+
+    .box2 {
+        width: 70%;
+        height: 100%;
+    }
+
+    .box3 {
+        width: 5%;
+        height: 100%;
+    }
+
+    .box1 img,
+    .box3 img {
+        color: white;
+        margin-top: 5px;
+        width: 70%;
+
+    }
+
+    .banner {
+        width: 100%;
+        height: max-content;
+    }
+
+    .banner h1 {
+        text-align: center;
+        color: #D25469;
+        padding-top: 30px;
+    }
+
+    .banner h3 {
+        text-align: center;
+        margin-top: 10px;
+        padding: 0 3%;
+        padding-bottom: 20px;
+    }
+
+    .banner img {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .banner h1:hover {
+        font-size: 55px;
+    }
+
+    .mentorship {
+        width: 100%;
+        height: max-content;
+        margin-top: 50px;
+        padding: 1px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .m1 {
+        width: 45%;
+        height: 100%;
+        margin-left: 20px;
+        padding-bottom: 3%;
+    }
+
+    .m2 {
+        width: 45%;
+        height: 100%;
+    }
+
+    .img-div img {
+        width: 100%;
+    }
+
+    .m1 h2 {
+        margin-top: 15px;
+        color: #D25469;
+        letter-spacing: 1px;
+    }
+
+    .m1 p {
+        margin-top: 20px;
+        line-height: 29px;
+        text-align: justify;
+    }
+
+    button {
+        width: 200px;
+        height: 35px;
+        margin-top: 30px;
+        letter-spacing: 2px;
+        background-color: #D25469;
+        color: white;
+        border: none;
+
+    }
+
+    .m2 h3 {
+        color: #D25469;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .mentor_form {
+        width: 100%;
+        height: max-content;
+        background-color: #FFDFDD;
+        padding: 1px;
+        text-align: center;
+    }
+
+    .input-main {
+        width: 50%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 4%;
+    }
+
+    .mentor_form h1 {
+        text-align: center;
+        margin-top: 30px;
+        font-size: 25px;
+    }
+
+    .mentor_form h3 {
+        text-align: center;
+        color: #D25469;
+        font-size: 16px;
+        margin-top: 10px;
+        padding: 0 3%;
+    }
+
+    .mentor_form input {
+        width: 100%;
+        height: 40px;
+        margin-top: 10px;
+        padding: 5px;
+        border: none;
+    }
+
+    .mentor_form textarea {
+        width: 100%;
+        height: 130px;
+        margin-top: 10px;
+        border: none;
+        padding: 5px;
+    }
+
+    .skill {
+        width: 100%;
+        height: max-content;
+        display: flex;
+        justify-content: space-around;
+        padding: 1px;
+        margin-top: 20px;
+    }
+
+    .s1 {
+        width: 80%;
+        height: 100%;
+        text-align: center;
+    }
+
+    .s1 h2 {
+        margin-top: 15px;
+        color: #D25469;
+        letter-spacing: 1px;
+    }
+
+    .s1 p {
+        margin-top: 20px;
+        line-height: 29px;
+        text-align: justify;
+    }
+
+    .events {
+        width: 100%;
+        height: max-content;
+        display: flex;
+        justify-content: space-around;
+        padding: 1px;
+        margin-top: 20px;
+        padding: 3% 0;
+    }
+
+    .e1 {
+        width: 45%;
+        height: 100%;
+        margin-left: 20px;
+    }
+
+    .e2 {
+        width: 45%;
+        height: 100%;
+        background-image: url(./images/events.png);
+    }
+
+    .e2 img {
+        width: 70%;
+        margin-left: calc(50% - 35%);
+        padding: 10px;
+    }
+
+    .e1 h2 {
+        margin-top: 15px;
+        color: #D25469;
+        letter-spacing: 1px;
+    }
+
+    .e1 p {
+        margin-top: 20px;
+        line-height: 29px;
+        text-align: justify;
+    }
+
+    .tech {
+        width: 100%;
+        height: max-content;
+        background-color: #FFDFDD;
+        margin-top: 20px;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .tech h2 {
+        margin-top: 15px;
+        color: #D25469;
+        letter-spacing: 1px;
+    }
+
+    .tech p {
+        margin-top: 20px;
+        line-height: 29px;
+        text-align: justify;
+        text-align: center;
+        padding: 0 3%;
+    }
+
+    .footer {
+        width: 100%;
+        height: max-content;
+        padding-bottom: 20px;
+        background-color: #D25469;
+        display: flex;
+        justify-content: center;
+    }
+
+    .ff {
+        width: 22%;
+        height: 100%;
+    }
+
+    .f1 img {
+        width: 100%;
+        margin-top: 60px;
+    }
+
+    .ff h3 {
+        color: white;
+        margin-top: 30px;
+    }
+
+    .ff p {
+        color: white;
+        margin-top: 10px;
+    }
+
+    .end {
+        width: 100%;
+        height: 6vh;
+        background-color: #FEDEDC;
+    }
+
+    .end p {
+        text-align: center;
+        padding: 5px;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    @media screen and (max-width:1130px) {
+        .e2 {
+            width: 50%;
+        }
+
+    }
+
+    @media screen and (max-width: 1075px) {
+        nav li {
+            margin: 10px 0;
+            padding: 0;
+            margin-left: 10px;
+        }
+
+        .ff {
+            width: 25%;
+        }
+
+        .ff h3 {
+            font-size: 18px;
+        }
+
+        .ff p {
+            font-size: 15px;
+        }
+    }
+
+    @media screen and (max-width:980px) {
+        nav li {
+            margin: 10px 0;
+            margin-left: 10px;
+        }
+
+        nav a {
+            padding: 0;
+            font-size: 16px;
+        }
+
+        .m1 {
+            width: 90%;
+            margin: auto;
+        }
+
+        .m2 {
+            width: 90%;
+            margin: auto;
+        }
+
+        .mentorship {
+            flex-wrap: wrap-reverse;
+        }
+
+        .m1 p {
+            padding-right: 4%;
+        }
+
+        .events {
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .e1 {
+            width: 90%;
+            margin: auto;
+        }
+
+        .e2 {
+            width: 90%;
+            margin: auto;
+            margin-top: 5%;
+        }
+
+        .ff p {
+            font-size: 13px;
+        }
+    }
+
+    @media screen and (max-width: 900px) {
+        .box2 {
+            position: absolute;
+            left: 0;
+            top: 108px;
+            height: max-content;
+            width: 100%;
+        }
+
+        .navbar {
+            justify-content: space-between;
+            text-align: left;
+        }
+
+        .box2 ul {
+            background-color: #D25469;
+            padding: 10px;
+            width: 100%;
+        }
+
+        .active2 {
+            display: none;
+        }
+
+        .box2 li {
+            display: block;
+        }
+
+        .active2 {
+            display: none;
+        }
+
+        .ff {
+            width: 50%;
+        }
+
+        .footer {
+            flex-wrap: wrap;
+
+        }
+
+        .f3 {
+            padding-left: 80px;
+        }
+
+        .box1 img,
+        .box3 img {
+            width: 80%;
+            margin-top: 10px;
+        }
+    }
+
+    @media screen and (max-width:730px) {
+        .input-main {
+            width: 70%;
+        }
+
+        .banner h1 {
+            font-size: 25px;
+        }
+
+        .box1 img,
+        .box3 img {
+            width: 80%;
+
+        }
+    }
+
+    @media screen and (max-width:500px) {
+        .input-main {
+            width: 90%;
+            margin: auto;
+        }
+
+        .box1,
+        .box3 {
+            width: 10%;
+
+        }
+
+        .box1 img,
+        .box3 img {
+            width: 70%;
+
+        }
+
+    }
+
+    @media screen and (max-width: 374px) {
+        .ff {
+            padding-left: 10px;
+            width: 100%;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: center;
+        }
+
+        #logo img {
+            width: 100%;
+        }
+
+        .box1,
+        .box3 {
+            width: 10%;
+
+        }
+
+        .box1 img,
+        .box3 img {
+            width: 80%;
+
+        }
+    }
+</style>
+
+<body>
+    <header>
+        <div id="logo"><a href="./index.html">
+                <img src="./images/SHE LEADERS HUB LOGO.png" alt=""></a>
+        </div>
+        <div class="navbar">
+            <div class="box1 ">
+                <img src="./images/bars.PNG" alt="" onclick="menuclick()">
+            </div>
+            <div class="box2 active2">
+                <nav>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./about.html">About Us</a></li>
+                        <li><a href="./services.html">Services</a></li>
+                        <li><a href="./success.html">Success Stories</a></li>
+                        <li><a href="./selfcare.html">Self-Care</a></li>
+                        <li><a href="./contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="box3">
+                <img src="./images/search.PNG" alt="">
+            </div>
+        </div>
+    </header>
+    <div class="banner">
+        <div class="banner-text">
+            <h1>Our Services</h1>
+            <h3>We deliver exceptional services for your growth</h3>
+        </div>
+        <img src="./images/services background.png" alt="">
+    </div>
+    <div class="mentorship">
+        <div class="m1">
+            <h2>Mentorship</h2>
+            <p>Our mentorship services are here to help you reach your full potential and
+                achieve your goals. Our mentors are experienced and will work closely with
+                you to identify what you're good at and where you need help. Together,
+                you'll set realistic targets and our mentors will guide and support you
+                every step of the way. Whether you want to start your own business, change
+                careers, or just get better at something, our mentors will give you
+                the skills and knowledge you need to succeed.
+                To avail our mentorship services, simply fill the mentorship form given
+                below and our team will get back to you with further details.</p>
+            <button><a href="#move">Fill the Form</a></button>
+        </div>
+        <div class="m2">
+            <div class="img-div">
+                <img src="./images/ANAM.png" alt="">
+            </div>
+            <h3>Our Mentors</h3>
+        </div>
+
+    </div>
+    <form id="move" class="mentor_form">
+        <h1>Mentorship Form</h1>
+        <h3>Fill out the mentorship form and connect with our best mentors.</h3>
+        <div class="input-main">
+            <input type="text" name="" id="" placeholder="Enter your Name">
+            <input type="email" name="" id="" placeholder="Enter your Email">
+            <input type="text" name="" id="" placeholder="Enter your Phone number">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <button>Send</button>
+        </div>
+    </form>
+    <div class="skill">
+        <div class="s1">
+            <h2>Skill building workshops</h2>
+            <p>At She Leaders Hub, we believe in empowering women to become successful
+                entrepreneurs. Our skills-building workshops provide practical knowledge
+                and resources to help women start and grow their own businesses. Led by
+                experienced entrepreneurs and industry experts, our workshops cover a
+                range of topics, from developing a business plan to marketing and sales
+                strategies. Join our community of women entrepreneurs and take the
+                first step towards building your dream business.</p>
+            <button><a href="./contact.html">Contact Us</a></button>
+        </div>
+    </div>
+    <div class="events">
+        <div class="e1">
+            <h2>Networking Events</h2>
+            <p>At She Leaders Hub, we organize networking events to bring
+                together women entrepreneurs from diverse industries and
+                backgrounds. Our events are designed to facilitate meaningful
+                conversations, foster collaborations, and provide a platform
+                for individuals to showcase their businesses. Whether you're
+                a seasoned entrepreneur or just starting out, our networking
+                events offer an excellent opportunity to build relationships,
+                exchange ideas, and explore new opportunities. Stay tuned
+                for our upcoming events and join us to take your business
+                to the next level!</p>
+        </div>
+        <div class="e2">
+            <img src="./images/pop up.jpg" alt="">
+        </div>
+    </div>
+    <div class="tech">
+        <h2>Technology support</h2>
+        <p>We offer a technology support service that helps individuals and businesses
+            maximize the benefits of technology. Our solutions are designed to
+            increase productivity and streamline operations, with a team of experts
+            who can assist with hardware and software support, network setup and
+            maintenance, cloud computing, and cybersecurity. Whether you're a new
+            business or a well-established one, we can provide customized solutions
+            to meet your specific needs and help you stay competitive in the
+            market.</p>
+        <button><a href="./contact.html">Get support</a></button>
+    </div>
+    <div class="footer">
+        <div class="f1 ff"><a href="./index.html">
+                <img src="./images/SHE LEADERS HUB LOGO.png" alt=""></a>
+        </div>
+        <div class="f2 ff">
+            <h3>Company</h3>
+            <p>Address: Pakistan</p>
+            <p>Contact number: +9230764502</p>
+            <p>Email: Sheleadershub@outlook.com</p>
+        </div>
+        <div class="f3 ff">
+            <h3>Information</h3>
+            <p><a href="./success.html"> Success stories</a></p>
+            <p><a href="./services.html">Services</a></p>
+            <p><a href="./selfcare.html">Self-care</a></p>
+        </div>
+        <div class="f4 ff">
+            <h3>Discover</h3>
+            <p><a href="./about.html"> About us</a></p>
+            <p><a href="./contact.html">Contact us</a></p>
+        </div>
+    </div>
+    <div class="end">
+        <p>© 2023, She Leaders Hub </p>
+    </div>
+</body>
+<script>
+    var menu = document.getElementsByClassName("box2")[0];
+    function menuclick() {
+        menu.classList.toggle("active2");
+
+    }
+
+</script>
+
+</html>

@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        cursor: pointer;
+        font-family: sans-serif;
+    }
+
+    header {
+        height: 20vh;
+
+    }
+
+    #logo {
+        height: 60%;
+        background-color: white;
+        text-align: center;
+
+
+    }
+
+    #logo img {
+        height: 85%;
+        margin-top: 10px;
+
+    }
+
+    .navbar {
+        height: 40%;
+        background-color: #D25469;
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+    nav ul {
+        list-style: none;
+
+    }
+
+    nav li {
+        display: inline-block;
+        margin-right: 20px;
+        padding: 15px;
+    }
+
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 10px;
+    }
+
+    nav a:hover {
+        background-color: white;
+        color: #D25469;
+    }
+
+    .box1 {
+        width: 5%;
+        height: 100%;
+    }
+
+    .box2 {
+        width: 70%;
+        height: 100%;
+    }
+
+    .box3 {
+        width: 5%;
+        height: 100%;
+    }
+
+    .box1 img,
+    .box3 img {
+        color: white;
+        margin-top: 5px;
+        width: 70%;
+    }
+
+    .banner {
+        width: 100%;
+        height: max-content;
+        background-image: url(./images/bg\ about.png);
+        background-size: cover;
+        padding: 1px;
+        display: flex;
+        justify-content: center;
+        padding: 3% 0;
+    }
+
+    .banner h1 {
+        color: #d83f59;
+        text-align: center;
+        font-size: 60px;
+    }
+
+    .banner h3 {
+        text-align: center;
+    }
+
+    .b1 {
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .b2 {
+        width: 40%;
+        height: 100%;
+    }
+
+    .b2 img {
+        width: 70%;
+    }
+
+    .director {
+        width: 100%;
+        height: max-content;
+        background-color: white;
+        padding: 1px;
+        display: flex;
+    }
+
+    .d1 {
+        width: 50%;
+        height: 90%;
+        margin-top: 40px;
+        margin-left: calc(50% - 40%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .d1 img {
+        width: 100%;
+    }
+
+    .text {
+        width: 100%;
+        height: max-content;
+        background-color: #FFDFDD;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        padding: 1px;
+        position: absolute;
+        right: -75%;
+    }
+
+    .text h2 {
+        margin-left: 20px;
+        color: #d83f59;
+        margin-top: 30px;
+    }
+
+    .text p {
+        margin-top: 10px;
+        margin-left: 25px;
+        line-height: 25px;
+    }
+
+    .mission {
+        width: 100%;
+        height: max-content;
+        background-color: white;
+        padding: 1px;
+        margin-top: 30px;
+        position: relative;
+        padding-bottom: 4%;
+        display: flex;
+        align-items: center;
+    }
+
+    .mission h2 {
+        color: #d83f59;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .text_container {
+        width: 70%;
+        height: max-content;
+        background-color: #FFDFDD;
+        padding: 1px;
+        padding-bottom: 2%;
+        margin-left: 15%;
+        margin-top: 30px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+    }
+
+    .mission img {
+        width: 30%;
+        position: absolute;
+        left: calc(-7%);
+    }
+
+    .mission p {
+        text-align: center;
+        line-height: 26px;
+        margin-top: 10px;
+        padding: 0 2%;
+    }
+
+    .future {
+        width: 100%;
+        height: max-content;
+        background-color: white;
+        padding: 5% 0;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .ft {
+        width: 40%;
+        height: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .f12 {
+        width: 50%;
+        position: relative;
+    }
+
+    .future_text {
+        width: 100%;
+        height: max-content;
+        background-color: #FFDFDD;
+        padding: 1px;
+        position: absolute;
+        left: calc(50% - 43%);
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    .future_text h2 {
+        margin-left: 20px;
+        color: #d83f59;
+        margin-top: 20px;
+    }
+
+    .future_text p {
+        margin-top: 10px;
+        margin-left: 25px;
+        line-height: 25px;
+    }
+
+    .f21 img {
+        width: 100%;
+    }
+
+    .footer {
+        width: 100%;
+        height: max-content;
+        padding-bottom: 20px;
+        background-color: #D25469;
+        display: flex;
+        justify-content: center;
+    }
+
+    .ff {
+        width: 22%;
+        height: 100%;
+        margin-left: 90px;
+    }
+
+    .f1 img {
+        width: 100%;
+        margin-top: 60px;
+    }
+
+    .ff h3 {
+        color: white;
+        margin-top: 30px;
+    }
+
+    .ff p {
+        color: white;
+        margin-top: 10px;
+    }
+
+    .end {
+        width: 100%;
+        height: 6vh;
+        background-color: #FEDEDC;
+    }
+
+    .end p {
+        text-align: center;
+        padding: 5px;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    @media screen and (max-width: 1075px) {
+        nav li {
+            margin: 10px 0;
+            padding: 0;
+            margin-left: 10px;
+        }
+
+        .ff {
+            width: 50%;
+            margin: 0;
+        }
+
+        .ff h3 {
+            font-size: 18px;
+        }
+
+        .ff p {
+            font-size: 15px;
+        }
+    }
+
+    @media screen and (max-width:1000px) {
+        .b2 {
+            width: 100%;
+        }
+
+        .b1 {
+            width: 100%;
+        }
+
+        .future {
+            padding: 2% 0;
+        }
+
+        nav li {
+            margin: 10px 0;
+            margin-left: 10px;
+        }
+
+        nav a {
+            padding: 0;
+            font-size: 16px;
+        }
+
+        .ff img {
+            margin-top: 20px;
+        }
+
+        .ff p {
+            font-size: 13px;
+        }
+    }
+
+    @media screen and (max-width:900px) {
+        .box2 {
+            position: absolute;
+            left: 0;
+            top: 108px;
+            height: max-content;
+            width: 100%;
+        }
+
+        .navbar {
+            justify-content: space-between;
+            text-align: left;
+        }
+
+        .box2 ul {
+            background-color: #D25469;
+            padding: 10px;
+            width: 100%;
+        }
+
+        .box2 li {
+            display: block;
+        }
+
+        .active2 {
+            display: none;
+        }
+
+        .footer {
+            flex-wrap: wrap;
+        }
+
+        .ff {
+            width: 50%;
+
+        }
+
+        .f3 {
+            padding-left: 80px;
+        }
+
+        .text {
+            height: 100%;
+            width: 90%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            right: -80%;
+        }
+
+        .d1 {
+            margin-left: calc(50% - 45%);
+        }
+
+        .box1 img,
+        .box3 img {
+            width: 80%;
+            margin-top: 10px;
+        }
+    }
+
+    @media screen and (max-width:850px) {
+        .banner h1 {
+            font-size: 45px;
+        }
+
+        .b2 {
+            width: 100%;
+            text-align: center;
+        }
+
+        .b1 {
+            width: 100%;
+        }
+
+        .banner {
+            flex-wrap: wrap;
+        }
+
+        .ft {
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width:750px) {
+        .banner h1 {
+            font-size: 40px;
+        }
+
+        .text {
+            width: 100%;
+            position: static;
+        }
+
+        .image-div {
+            width: 100%;
+        }
+
+        .d1 {
+            width: 90%;
+            flex-wrap: wrap;
+        }
+
+        .mission img {
+            top: 0;
+            transform: rotate(30deg);
+            left: calc(-2%);
+        }
+
+        .future {
+            flex-wrap: wrap-reverse;
+        }
+
+        .future_text {
+            position: static;
+            margin-top: -10%;
+        }
+
+        .box1 img,
+        .box3 img {
+            width: 80%;
+
+        }
+    }
+
+    @media screen and (max-width:550px) {
+        .b1 h1 {
+            font-size: 35px;
+        }
+
+        .b1 h3 {
+            font-size: 17px;
+            padding: 0 3%;
+
+        }
+
+        .text_container h2 {
+            font-size: 23px;
+        
+        }
+
+        .box1,
+        .box3 {
+            width: 10%;
+
+        }
+
+        .box1 img,
+        .box3 img {
+            width: 70%;
+
+        }
+    }
+
+    @media screen and (max-width: 374px) {
+        .ff {
+            padding-left: 10px;
+            width: 100%;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: center;
+        }
+
+        #logo img {
+            width: 100%;
+        }
+
+        .box1,
+        .box3 {
+            width: 10%;
+
+        }
+
+        .box1 img,
+        .box3 img {
+            width: 80%;
+
+        }
+    }
+</style>
+
+<body>
+    <header>
+        <div id="logo"><a href="./index.html">
+                <img src="./images/SHE LEADERS HUB LOGO.png" alt=""></a>
+        </div>
+        <div class="navbar">
+            <div class="box1">
+                <img src="./images/bars.PNG" alt="" onclick="menuclick()">
+            </div>
+            <div class="box2 active2">
+                <nav>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./about.html">About Us</a></li>
+                        <li><a href="./services.html">Services</a></li>
+                        <li><a href="./success.html">Success Stories</a></li>
+                        <li><a href="./selfcare.html">Self-Care</a></li>
+                        <li><a href="./contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="box3">
+                <img src="./images/search.PNG" alt="">
+            </div>
+        </div>
+    </header>
+    <div class="banner">
+        <div class="b1">
+            <h1>About Us</h1>
+            <h3>Learn more about us and our mission</h3>
+        </div>
+        <div class="b2">
+            <img src="./images/ab2.png" alt="">
+        </div>
+    </div>
+    <div class="director">
+        <div class="d1 dd">
+            <div class="image-div">
+                <img src="./images/director.png" alt="">
+            </div>
+            <div class="text">
+                <h2>Meet The Director</h2>
+                <p>Hello, I'm Maham Kashif, the proud Director of She Leaders Hub.
+                    With a passion for empowering women and a commitment to creating
+                    a community of driven and successful female leaders, I am honored
+                    to lead our organization and work towards our mission of creating
+                    a better future for women everywhere</p>
+            </div>
+        </div>
+    </div>
+    <div class="mission">
+        <div class="text_container">
+            <h2>Company History</h2>
+            <p>She Leaders Hub was founded by Maham Kashif, a passionate young woman who wanted to create a space where
+                other women could come together, share their experiences and knowledge
+                , and empower each other to become leaders in their fields
+                She Leaders Hub has grown into a community of strong, ambitious women who are
+                committed to supporting and empowering each other. We have hosted numerous events
+                and workshops focused on leadership development, entrepreneurship, and career
+                advancement. We have also expanded our online presence, providing resources and support to women around
+                the world.
+                Today, She Leaders Hub continues to be a leader in the women's empowerment space, with a
+                dedicated team and a growing community of members who are making a positive impact
+                in their personal and professional lives</p>
+        </div>
+        <img src="./images/graphics.png" alt="">
+    </div>
+    <div class="future">
+        <div class="f12 ft">
+            <div class="future_text">
+                <h2>Future Mission</h2>
+                <p>Our goal at She Leaders Hub is to empower more women globally by
+                    establishing new programmes and projects that will broaden our
+                    influence. To give our members access to cutting-edge information
+                    and mentorship opportunities, we intend to form collaborations with
+                    top companies and professionals across a range of industries.
+                    Our ultimate objective is to establish
+                    a society in which women are given equal opportunity
+                    and respected as experts in their disciplines.</p>
+            </div>
+        </div>
+        <div class="f21 ft">
+            <img src="./images/ab3.png" alt="">
+        </div>
+    </div>
+    <div class="footer">
+        <div class="f1 ff"><a href="./index.html">
+                <img src="./images/SHE LEADERS HUB LOGO.png" alt=""></a>
+        </div>
+        <div class="f2 ff">
+            <h3>Company</h3>
+            <p>Address: Pakistan</p>
+            <p>Contact number: +9230764502</p>
+            <p>Email: Sheleadershub@outlook.com</p>
+        </div>
+        <div class="f3 ff">
+            <h3>Information</h3>
+            <p><a href="./success.html"> Success stories</a></p>
+            <p><a href="./services.html">Services</a></p>
+            <p><a href="./selfcare.html">Self-care</a></p>
+        </div>
+        <div class="f4 ff">
+            <h3>Discover</h3>
+            <p><a href="./about.html"> About us</a></p>
+            <p><a href="./contact.html">Contact us</a></p>
+        </div>
+    </div>
+    <div class="end">
+        <p>© 2023, She Leaders Hub </p>
+    </div>
+</body>
+<script>
+    var menu = document.getElementsByClassName("box2")[0];
+    function menuclick() {
+        menu.classList.toggle("active2");
+
+    }
+
+</script>
+
+</html>

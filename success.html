@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success Stories</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        cursor: pointer;
+        font-family: sans-serif;
+    }
+
+    header {
+        height: 20vh;
+
+    }
+
+    #logo {
+        height: 60%;
+        background-color: white;
+        text-align: center;
+
+
+    }
+
+    #logo img {
+        height: 85%;
+        margin-top: 10px;
+
+    }
+
+    .navbar {
+        height: 40%;
+        background-color: #D25469;
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+    }
+
+    nav ul {
+        list-style: none;
+
+    }
+
+    nav li {
+        display: inline-block;
+        margin-right: 20px;
+        padding: 15px;
+    }
+
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 10px;
+    }
+
+    nav a:hover {
+        background-color: white;
+        color: #D25469;
+    }
+
+    .box1 {
+        width: 5%;
+        height: 100%;
+    }
+
+    .box2 {
+        width: 70%;
+        height: 100%;
+    }
+
+    .box3 {
+        width: 5%;
+        height: 100%;
+    }
+
+    .box1 img,
+    .box3 img {
+        color: white;
+        width: 70%;
+        margin-top: 5px;
+    }
+
+    .banner {
+        width: 100%;
+        height: max-content;
+        background-image: url(./images/bg\ about.png);
+        background-size: cover;
+        padding: 2% 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banner h1 {
+        color: #d83f59;
+        text-align: center;
+        font-size: 60px;
+    }
+
+    .banner h3 {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .b1 {
+        width: 40%;
+        height: 100%;
+    }
+
+    .b2 {
+        width: 40%;
+        height: 100%;
+    }
+
+    .b2 img {
+        width: 70%;
+    }
+
+    .story {
+        width: 100%;
+        height: max-content;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        margin-top: 30px;
+        padding: 1px;
+        padding-bottom: 20px;
+    }
+
+    .ss {
+        width: 45%;
+        height: 48%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .ss .pic {
+        width: 40%;
+        height: 100%;
+
+    }
+
+    .pic img {
+        width: 100%;
+    }
+
+    .ss .text {
+        width: 58%;
+        height: max-content;
+
+    }
+
+    .text h2 {
+        color: #D25469;
+        margin-top: 10px;
+    }
+
+    .text h3 {
+        font-size: 15px;
+        margin-top: 5px;
+    }
+
+    .text p {
+        margin-top: 10px;
+        padding: 0 5px;
+    }
+
+    .footer {
+        width: 100%;
+        height: max-content;
+        background-color: #D25469;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+
+    .ff {
+        width: 22%;
+        height: 100%;
+        margin-left: 90px;
+    }
+
+    .f1 img {
+        width: 100%;
+        margin-top: 60px;
+    }
+
+    .ff h3 {
+        color: white;
+        margin-top: 30px;
+    }
+
+    .ff p {
+        color: white;
+        margin-top: 10px;
+    }
+
+    .end {
+        width: 100%;
+        height: 6vh;
+        background-color: #FEDEDC;
+    }
+
+    .end p {
+        text-align: center;
+        padding: 5px;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    @media screen and (max-width:1170px) {
+        .banner {
+            justify-content: space-evenly;
+            padding: 5% 0;
+        }
+
+        .b1 {
+            width: 55%;
+        }
+
+        .b2 {
+            width: 35%;
+        }
+
+        .pic {
+            width: 100% !important;
+        }
+
+        .pic img {
+            width: 90%;
+            margin-left: 5%;
+        }
+
+        .text {
+            width: 90% !important;
+            margin-left: 5%;
+        }
+
+        .ss {
+            flex-wrap: wrap;
+            margin-top: 4%;
+
+        }
+
+        nav li {
+            margin: 10px 0;
+            padding: 0;
+            margin-left: 10px;
+        }
+
+        .ff {
+            width: 50%;
+            margin: 0;
+        }
+
+        .ff h3 {
+            font-size: 18px;
+        }
+
+        .ff p {
+            font-size: 15px;
+        }
+
+    }
+
+    @media screen and (max-width:1000px) {
+
+        nav li {
+            margin: 10px 0;
+            margin-left: 10px;
+        }
+
+        nav a {
+            padding: 0;
+            font-size: 16px;
+        }
+
+        .ff img {
+            margin-top: 20px;
+        }
+
+        .ff p {
+            font-size: 13px;
+        }
+    }
+
+    @media screen and (max-width:900px) {
+        .b1 h1 {
+            font-size: 40px;
+        }
+
+        .box2 {
+            position: absolute;
+            left: 0;
+            top: 40px;
+            height: max-content;
+            width: 100%;
+            z-index: 2;
+        }
+
+        .navbar {
+            justify-content: space-between;
+            text-align: left;
+        }
+
+        .box2 ul {
+            background-color: #D25469;
+            padding: 10px;
+            width: 100%;
+        }
+
+        .box2 li {
+            display: block;
+        }
+
+        .active2 {
+            display: none;
+        }
+
+        .footer {
+            flex-wrap: wrap;
+        }
+
+        .ff {
+            width: 50%;
+
+        }
+
+        .f3 {
+            padding-left: 80px;
+        }
+
+        .box1 img,
+        .box3 img {
+            width: 80%;
+            margin-top: 10px;
+        }
+    }
+
+    @media screen and (max-width:730px) {
+        .b1 {
+            width: 100%;
+            height: max-content;
+            position: absolute;
+            top: 20%;
+        }
+
+        .b1 h1 {
+            margin-top: 3%;
+        }
+
+        .b1 h3 {
+            padding: 0 2%;
+        }
+
+        .b2 {
+            width: 100%;
+            margin-top: 1%;
+        }
+
+        .b2 img {
+            width: 90%;
+            margin-left: 5%;
+            margin-top: 20px;
+        }
+
+        .banner {
+            flex-wrap: wrap;
+            padding: 1px;
+        }
+    }
+
+    @media screen and (max-width:530px) {
+        .b2 {
+            margin-top: 1%;
+        }
+
+        .b1 h1 {
+            font-size: 30px;
+        }
+
+        .b1 h3 {
+            font-size: 13px;
+        }
+
+        .ss {
+            width: 90%;
+        }
+
+        .box1,
+        .box3 {
+            width: 10%;
+        }
+
+        .box1 img,
+        .box3 img {
+            width: 70%;
+        }
+    }
+
+    @media screen and (max-width:400px) {
+        .b2 {
+            margin-top: 15%;
+        }
+
+        .ff {
+            padding-left: 30px;
+            width: 100%;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: center;
+        }
+
+        #logo img{
+            width: 370px;
+          transform: translate(-30px);
+           
+        }
+        #logo{
+            overflow: hidden;
+        }
+
+        .box1,
+        .box3 {
+            width: 10%;
+        }
+
+        .box1 img,
+        .box3 img {
+            width: 80%;
+
+        }
+        @media screen and (max-width:400px) {
+            #logo img{
+            width: 370px;
+          transform: translate(-30px);
+           
+        }
+        }
+    }
+</style>
+
+<body>
+    <header>
+        <div id="logo"><a href="./index.html">
+                <img src="./images/SHE LEADERS HUB LOGO.png" alt=""></a>
+        </div>
+        <div class="navbar">
+            <div class="box1">
+                <img src="./images/bars.PNG" alt="" onclick="menuclick()">
+            </div>
+            <div class="box2 active2">
+                <nav>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./about.html">About Us</a></li>
+                        <li><a href="./services.html">Services</a></li>
+                        <li><a href="./success.html">Success Stories</a></li>
+                        <li><a href="./selfcare.html">Self-Care</a></li>
+                        <li><a href="./contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="box3">
+                <img src="./images/search.PNG" alt="">
+            </div>
+        </div>
+    </header>
+    <div class="banner">
+        <div class="b1">
+            <h1>Success stories</h1>
+            <h3>From struggle to success: Real stories from real people</h3>
+        </div>
+        <div class="b2">
+            <img src="./images/ab.png" alt="">
+        </div>
+    </div>
+    <div class="story">
+        <div class="s1 ss">
+            <div class="pic">
+                <img src="./images/Maham Kashif.png" alt="">
+            </div>
+            <div class="text">
+                <h2>Blossom Jewels</h2>
+                <h3>CEO: Maham Kashif</h3>
+                <p>"I am the founder of Blossom Jewels, a jewelry brand that specializes in creating trendy and
+                    minimalist jewelry for girls.
+                    As a young entrepreneur, I started this business with a passion for creating unique pieces that
+                    would appeal to a wide audience. Building this business from scratch was not an easy task. I faced
+                    numerous challenges along the way, but I was determined to turn my dream into a reality. With hard
+                    work and perseverance, I created a stunning collection of jewelry that reflected my unique style and
+                    personality."</p>
+            </div>
+        </div>
+        <div class="s2 ss">
+            <div class="pic">
+                <img src="./images/laiba.png" alt="">
+            </div>
+            <div class="text">
+                <h2>Labsstitch</h2>
+                <h3>CEO: Laiba Querishi</h3>
+                <p>"LabsStitch is my hand-embroidered t-shirt brand that I started to showcase my love for creative
+                    designs and personal style. As an avid fan of unique and trendy fashion, I wanted to create
+                    something that would stand out and make a statement. That's how I came up with the idea of hand
+                    embroidering t-shirts with my own designs. Even though there were challenges along the way, I kept
+                    going and never lost sight of my vision. Today, LabsStitch is a thriving brand that has gained a
+                    loyal following of customers who appreciate the uniqueness and quality of my designs."</p>
+            </div>
+        </div>
+        <div class="s3 ss">
+            <div class="pic">
+                <img src="./images/zuha.png" alt="">
+            </div>
+            <div class="text">
+                <h2>Zuha Captures</h2>
+                <h3>CEO: Zuha Ahmed</h3>
+                <p>"I'm a photographer with a passion for capturing the beauty of nature and
+                    the world around us. From breathtaking landscapes to delicate flowers, I love exploring the natural
+                    world through my lens and sharing my vision with others.
+                    As a photographer, I believe that every image should tell a story and evoke emotion in the viewer. I
+                    strive to create images that are not only visually stunning but also capture the essence of the
+                    subject and the mood of the moment."</p>
+            </div>
+        </div>
+        <div class="s4 ss">
+            <div class="pic">
+                <img src="./images/momina.png" alt="">
+            </div>
+            <div class="text">
+                <h2>Sugar Courted</h2>
+                <h3>CEO: Momina Muzaffar</h3>
+                <p>"Sugar Courted is my brand that I started with a passion for baking and creating delicious desserts.
+                    As a baker, I specialize in crafting custom cakes and sweet treats for all occasions, from birthdays
+                    to weddings and everything in between.With a focus on using high-quality ingredients and unique
+                    flavor combinations, I take great pride in
+                    creating desserts that not only look beautiful but taste incredible as well. From classic cakes and
+                    cupcakes to unique desserts like macarons and cake pops, I offer a variety of sweet treats to
+                    satisfy any sweet tooth."</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="f1 ff"><a href="./index.html">
+                <img src="./images/SHE LEADERS HUB LOGO.png" alt=""></a>
+        </div>
+        <div class="f2 ff">
+            <h3>Company</h3>
+            <p>Address: Pakistan</p>
+            <p>Contact number: +9230764502</p>
+            <p>Email: Sheleadershub@outlook.com</p>
+        </div>
+        <div class="f3 ff">
+            <h3>Information</h3>
+            <p><a href="./success.html"> Success stories</a></p>
+            <p><a href="./services.html">Services</a></p>
+            <p><a href="./selfcare.html">Self-care</a></p>
+        </div>
+        <div class="f4 ff">
+            <h3>Discover</h3>
+            <p><a href="./about.html"> About us</a></p>
+            <p><a href="./contact.html">Contact us</a></p>
+        </div>
+    </div>
+    <div class="end">
+        <p>© 2023, She Leaders Hub </p>
+    </div>
+</body>
+<script>
+    var menu = document.getElementsByClassName("box2")[0];
+    function menuclick() {
+        menu.classList.toggle("active2");
+
+    }
+
+</script>
+
+</html>

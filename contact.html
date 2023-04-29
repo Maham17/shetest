@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+</head>
+<style>
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-family: sans-serif;
+  }
+
+  header {
+    height: 20vh;
+    width: 100%;
+  }
+
+  #logo {
+    height: 60%;
+    background-color: white;
+    text-align: center;
+  }
+
+  #logo img {
+    height: 85%;
+    margin-top: 10px;
+
+  }
+
+  .navbar {
+    width: 100%;
+    height: 40%;
+    background-color: #D25469;
+    display: flex;
+    justify-content: space-around;
+
+  }
+
+  nav ul {
+    list-style: none;
+
+  }
+
+  nav li {
+    display: inline-block;
+    margin-right: 20px;
+    padding: 15px;
+  }
+
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+  }
+
+  nav a:hover {
+    background-color: white;
+    color: #D25469;
+  }
+
+  .box1 {
+    width: 5%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .box2 {
+    width: 70%;
+    height: 100%;
+  }
+
+  .box3 {
+    width: 5%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .box1 img,
+  .box3 img {
+    color: white;
+    box-sizing: border-box;
+  }
+
+  .banner {
+    width: 100%;
+    height: 450px;
+    background-image: url(./images/contact\ us.png);
+    padding: 1px;
+  }
+
+  .banner h1 {
+    text-align: center;
+    margin-top: 160px;
+    color: #D25469;
+  }
+
+  .banner h2 {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 5px;
+  }
+
+  .contact {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 1px;
+  }
+
+  .cc {
+    width: 45%;
+    height: 100%;
+  }
+
+  .cc h2 {
+    color: #D25469;
+    margin-top: 10px;
+  }
+
+  .c1 input {
+    width: 70%;
+    height: 40px;
+    margin-top: 20px;
+    padding: 10px;
+  }
+
+  .c1 textarea {
+    width: 70%;
+    margin-top: 20px;
+    padding: 10px;
+  }
+
+  button {
+    width: 220px;
+    height: 35px;
+    margin-top: 10px;
+    letter-spacing: 2px;
+    background-color: #D25469;
+    color: white;
+    border: none;
+
+  }
+
+  .c2 img {
+    width: 100%;
+  }
+
+  .footer {
+    width: 100%;
+    height: max-content;
+    background-color: #D25469;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    padding-bottom: 20px;
+  }
+
+  .ff {
+    width: 22%;
+    height: 100%;
+
+  }
+
+  .f1 img {
+    width: 100%;
+    margin-top: 60px;
+  }
+
+  .ff h3 {
+    color: white;
+    margin-top: 30px;
+  }
+
+  .ff p {
+    color: white;
+    margin-top: 10px;
+  }
+
+  .end {
+    width: 100%;
+    height: 6vh;
+    background-color: #FEDEDC;
+  }
+
+  .end p {
+    text-align: center;
+    padding: 5px;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  @media screen and (max-width: 1075px) {
+    nav li {
+      margin: 10px 0;
+      padding: 0;
+      margin-left: 10px;
+    }
+
+    .banner {
+      height: 300px;
+    }
+
+    .banner h1 {
+      font-size: 40px;
+      margin-top: 80px;
+    }
+
+    .banner h2 {
+      font-size: 16px;
+    }
+
+    .contact {
+      height: auto;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .cc {
+      width: 100%;
+      margin: 20px 0;
+    }
+
+    .c1 input,
+    .c1 textarea {
+      width: 100%;
+    }
+
+    .ff {
+      width: 25%;
+    }
+
+    .ff h3 {
+      font-size: 18px;
+    }
+
+    .ff p {
+      font-size: 15px;
+    }
+  }
+
+  @media screen and (max-width: 950px) {
+    nav li {
+      margin: 10px 0;
+      margin-left: 10px;
+    }
+
+    nav a {
+      padding: 0;
+      font-size: 16px;
+    }
+
+    .banner {
+      height: 250px;
+    }
+
+    .banner h1 {
+      font-size: 32px;
+      margin-top: 60px;
+    }
+
+    .banner h2 {
+      font-size: 14px;
+    }
+
+    .contact {
+      padding: 10px;
+    }
+
+    .cc {
+      width: 100%;
+      margin: 10px 0;
+    }
+
+    .c1 input,
+    .c1 textarea {
+      width: 100%;
+      font-size: 14px;
+    }
+
+
+    .ff img {
+      margin-top: 20px;
+    }
+
+    .ff p {
+      font-size: 13px;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    .box2 {
+      position: absolute;
+      left: 0;
+      top: 108px;
+      height: max-content;
+      width: 100%;
+    }
+
+    .navbar {
+      justify-content: space-between;
+      text-align: left;
+    }
+
+    .box2 ul {
+      background-color: #D25469;
+      padding: 10px;
+      width: 100%;
+    }
+
+    .box2 li {
+      display: block;
+    }
+
+    .active2 {
+      display: none;
+    }
+
+    .footer {
+      flex-wrap: wrap;
+    }
+
+    .ff {
+      width: 50%;
+
+    }
+
+    .f3 {
+      padding-left: 80px;
+    }
+  }
+
+  @media screen and (max-width: 590px) {
+    .box3{
+      width: 10%;
+    }
+  }
+
+  @media screen and (max-width: 374px) {
+    .ff {
+      padding-left: 10px;
+      width: 100%;
+    }
+
+    .footer {
+      display: flex;
+      justify-content: center;
+    }
+
+    #logo img {
+      width: 100%;
+    }
+  }
+</style>
+
+<body>
+  <header>
+    <div id="logo"><a href="./index.html">
+        <img src="./images/SHE LEADERS HUB LOGO.png" alt=""></a>
+    </div>
+    <div class="navbar">
+      <div class="box1">
+        <img src="./images/bars.PNG" alt="" onclick="menuclick()">
+      </div>
+      <div class="box2 active2">
+        <nav>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About Us</a></li>
+            <li><a href="./services.html">Services</a></li>
+            <li><a href="./success.html">Success Stories</a></li>
+            <li><a href="./selfcare.html">Self-Care</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="box3">
+        <img src="./images/search.PNG" alt="">
+      </div>
+    </div>
+  </header>
+  <div class="banner">
+    <h1>Contact Us</h1>
+    <h2>Let's stay in touch</h2>
+  </div>
+  <form class="contact">
+    <div class="cc c1">
+      <h2>Leave us a Message</h2>
+      <input type="text" placeholder="Enter your Name">
+      <input type="email" name="" id="" placeholder="Enter your Email">
+      <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+      <button>Submit</button>
+    </div>
+    <div class="cc c2">
+      <img src="./images/contact.png" alt="">
+    </div>
+  </form>
+  <div class="footer">
+    <div class="f1 ff"><a href="./index.html">
+        <img src="./images/SHE LEADERS HUB LOGO.png" alt=""></a>
+    </div>
+    <div class="f2 ff">
+      <h3>Company</h3>
+      <p>Address: Pakistan</p>
+      <p>Contact number: +9230764502</p>
+      <p>Email: Sheleadershub@outlook.com</p>
+    </div>
+    <div class="f3 ff">
+      <h3>Information</h3>
+      <p><a href="./success.html"> Success stories</a></p>
+      <p><a href="./services.html">Services</a></p>
+      <p><a href="./selfcare.html">Self-care</a></p>
+    </div>
+    <div class="f4 ff">
+      <h3>Discover</h3>
+      <p><a href="./about.html"> About us</a></p>
+      <p><a href="./contact.html">Contact us</a></p>
+    </div>
+  </div>
+  <div class="end">
+    <p>© 2023, She Leaders Hub </p>
+  </div>
+</body>
+<script>
+  var menu = document.getElementsByClassName("box2")[0];
+  function menuclick() {
+    menu.classList.toggle("active2");
+
+  }
+
+</script>
+
+</html>
